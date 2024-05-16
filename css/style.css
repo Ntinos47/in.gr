@@ -146,14 +146,14 @@ html {
     color: white;
 }
 .wrap-content2 {
-    width: 100%;
     display: flex;
 }
 .text1, .text2 {
+    max-width: 200px;
     font-family: "Manrope";
     letter-spacing: 0.2cap;
     text-align: center;
-    width: 400px;
+    font-size: 22px;
 }
 .button {
     height: 100px;
