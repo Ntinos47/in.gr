@@ -146,17 +146,19 @@ html {
     color: white;
 }
 .wrap-content2 {
+    width: 1100px;
     display: flex;
+    justify-content: space-between;
 }
 .text1, .text2 {
     max-width: 200px;
     font-family: "Manrope";
     letter-spacing: 0.2cap;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
 }
 .button {
-    height: 100px;
+    height: 150px;
     width: 200px;
 }
 
@@ -208,4 +210,23 @@ html {
 #fv-dots ul a:hover span {
     width: 9px;
     height: 9px;
+}
+
+
+
+
+@media (max-width: 1050px) {
+    .wrap-content2 {
+        width: 800px;
+    }
+}
+@media (max-width: 800px) {
+    .wrap-content2 {
+        width: 600px;
+    }
+}
+@media (max-width: 600px) {
+    .wrap-content2 {
+        width: 400px;
+    }
 }
