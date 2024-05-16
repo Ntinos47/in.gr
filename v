@@ -1,4 +1,21 @@
-body, html {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In.gr</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+
+    <script  src="https://code.jquery.com/jquery-3.5.1.min.js"  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/fullview.js"></script>
+
+
+    <style>
+        body, html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -234,3 +251,52 @@ html {
         width: 400px;
     }
 }
+
+    </style>
+</head>
+<body>
+    <div id="fullview">
+        <div id="section2" class="wrap-page">
+            <div class="wrap-content">
+                
+                <div class="wrap-content-items2">
+                    <div class="wrap-logo2">
+                        <div class="wrap-logo2">
+                            <img src="imgs/In.gr_logo.png" alt="logo">
+                        </div>
+                    </div>
+
+                    
+                    <div class="wrap-img-footer2">
+                        <div class="inner-img2">
+                            <img src="imgs/coca-cola.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrap-img">
+                    <div class="img1">
+                        <img src="imgs/plants.jpg" alt="plants">
+                    </div>
+                    <div class="img2">
+                        <img src="imgs/woods.jpeg" alt="woods">
+                    </div>
+                </div>
+                <div class="wrap-text2">
+                    <div class="wrap-content2">
+                        <div class="text1">
+                            <p>Ο "ΧΑΡΤΗΣ" ΜΙΑΣ ΒΙΩΣΙΜΗΣ ΕΛΛΑΔΑΣ</p>
+                        </div>
+                        <div class="button">
+                            <img class="switch_mob" src="imgs/switch.png" alt="">
+                        </div>
+                        <div class="text2">
+                            <p>ΟΙ ΜΕΓΑΛΕΣ "ΜΙΚΡΕΣ" ΜΑΣ ΑΛΛΑΓΕΣ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
