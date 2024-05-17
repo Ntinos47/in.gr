@@ -45,7 +45,7 @@ html {
 
 .wrap-logo {
     position: absolute;
-    top: 3%;
+    top: 2%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -110,14 +110,21 @@ html {
     height: auto;
 }
 
+/*FIX THAT*/
+.logo-c {
+    width: 100%;
+}
+
 /*****************************************/
 
 .wrap-logo2 {
     position: absolute;
-    top: 52vh;
     left: 50%;
     transform: translate(-50%);
     z-index: 1;
+}
+.logo {
+    padding-top: 20px;
 }
 .wrap-logo2 img {
     max-width: 90px;
@@ -151,11 +158,11 @@ html {
     justify-content: space-between;
 }
 .text1, .text2 {
-    max-width: 200px;
+    max-width: 300px;
     font-family: "Manrope";
     letter-spacing: 0.2cap;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
 }
 .switch_mob {
     width: 100px;
@@ -216,21 +223,140 @@ html {
     height: 9px;
 }
 
-
-
-
 @media (max-width: 1100px) {
     .wrap-content2 {
         width: 800px;
+    }
+    .text1, .text2 {
+        font-size: 25px;
     }
 }
 @media (max-width: 800px) {
     .wrap-content2 {
         width: 600px;
     }
+    .text1, .text2 {
+        font-size: 23px;
+    }
 }
 @media (max-width: 600px) {
     .wrap-content2 {
         width: 400px;
     }
+    .text1, .text2 {
+        font-size: 20px;
+    }
 }
+
+/***********************************/
+.section3{
+    max-height: 100vh;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    height: 100%;
+}
+
+.column {
+    box-sizing: border-box;
+}
+
+.column-1 {
+    width: 34%;
+}
+
+.column-2 {
+    width:48%;
+}
+
+.column-3 {
+    width: 18%;
+    background-color: rgb(202, 0, 0);
+}
+
+
+.wrap-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.img3{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.img3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrap-video {
+    top: -90%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.video {
+    height: auto;
+    max-width: 450px;
+    width: 100%;
+    min-width: 200px;
+    padding: 20px;
+}
+
+.wrap-map {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.map{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.map img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrap-logo3 {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+.logo3 {
+    padding-top: 5vh;
+}
+.wrap-logo3 img {
+    max-width: 70px;
+    height: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .column-1 {
+      width: 100%;
+      max-height: 43vh;
+    }
+    .wrap-video {
+        top:-100%
+    }
+    .video {
+        height: auto;
+        max-width: 200px;
+        width: 100%;    
+        padding: 20px;
+    }
+  }
