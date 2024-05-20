@@ -32,3 +32,16 @@ $(document).ready(function () {
     fv.data("fullView").scrollTo($(this).val());
   });
 });
+
+
+
+var section2 = document.getElementById('section2');
+var section3 = document.getElementById('section3')
+
+document.getElementById('text1').addEventListener('click', function() {
+    section2.style.transform = 'translateX(0)';
+});
+
+document.getElementById('text2').addEventListener('click', function() {
+    section3.style.transform = 'translateX(0)';
+});

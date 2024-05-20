@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    min-width: 350px;
 }
 html {
     scroll-behavior: smooth;
@@ -22,7 +23,28 @@ html {
     display: flex;
     width: 100%;
     height: 100vh;
+    transition: transform 0.5s ease;
 }
+#section2 {
+    transform: translateX(-100%);
+    background-color: rgb(214, 42, 42);
+}
+#section3{
+    transform: translateX(100%);
+    background-color: aqua;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+  }
+
 
 .wrap-img {
     position: relative;
@@ -165,8 +187,10 @@ html {
     font-size: 30px;
 }
 .switch_mob {
-    width: 100px;
+    width: 100%;
+    max-width: 100px;
     height: auto;
+    padding-top: 30px;
 }
 .button {
     height: 150px;
@@ -275,7 +299,7 @@ html {
 
 .column-3 {
     width: 18%;
-    background-color: rgb(202, 0, 0);
+    background-color: rgb(126, 0, 0);
 }
 
 
@@ -307,7 +331,6 @@ html {
     height: auto;
     max-width: 450px;
     width: 100%;
-    min-width: 200px;
     padding: 20px;
 }
 
@@ -322,11 +345,6 @@ html {
     height: 100%;
     overflow: hidden;
 }
-.map img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .wrap-logo3 {
     display: flex;
@@ -340,23 +358,58 @@ html {
     max-width: 70px;
     height: auto;
 }
+.wrap-content-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+.text3 {
+    max-width: 250px;
+    font-family: "Manrope";
+    letter-spacing: 0.2cap;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 200;
+    color: white;
+}
+.text4 {
+    max-width: 300px;
+    font-family: "Manrope";
+    letter-spacing: 0.2cap;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+}
 
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 800px) {
     .container {
       flex-direction: column;
     }
     .column-1 {
       width: 100%;
-      max-height: 43vh;
+      max-height: 32vh;
     }
     .wrap-video {
         top:-100%
     }
     .video {
         height: auto;
-        max-width: 200px;
+        max-width: 150px;
         width: 100%;    
         padding: 20px;
+    }    
+    
+    
+    .column-2 {
+        width: 100%;
+        max-height: 38vh;
     }
-  }
+    .column-3 {
+        width: 100%;
+        max-height: 30vh;
+    }
+}
