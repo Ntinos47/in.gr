@@ -39,9 +39,6 @@ var section2 = document.getElementById('section2');
 var section3 = document.getElementById('section3');
 var wrapimgfooter2 = document.getElementById('wrapimgfooter2');
 var wraplogo2 = document.getElementById('wraplogo2')
-var col1 = document.getElementById('column1')
-var col2 = document.getElementById('column2')
-var col3 = document.getElementById('column3')
 
 document.getElementById('text1').addEventListener('click', function() {
     section2.style.transform = 'translateX(0)';
@@ -51,13 +48,4 @@ document.getElementById('text1').addEventListener('click', function() {
 
 document.getElementById('text2').addEventListener('click', function() {
     section3.style.transform = 'translateX(0)';
-});
-
-
-
-document.getElementById('switch2').addEventListener
-('click', function() {
-    col1.style.width = '18%';
-    col2.style.width = '48%';
-    col3.style.width = '34%';
 });

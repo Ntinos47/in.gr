@@ -23,7 +23,7 @@ html {
     display: flex;
     width: 100%;
     height: 100vh;
-    transition: transform 0.9s ease;
+    transition: transform 0.5s ease;
 }
 #section2 {
     transform: translateX(-100%);
@@ -285,19 +285,20 @@ html {
     height: 100%;
 }
 
-.column1 {
+.column {
+    box-sizing: border-box;
+}
+
+.column-1 {
     width: 34%;
-    transition: transform 0.9s ease;
 }
 
-.column2 {
-    width: 48%;
-    transition: transform 0.9s ease;
+.column-2 {
+    width:48%;
 }
 
-.column3 {
+.column-3 {
     width: 18%;
-    transition: transform 0.9s ease;
     background-color: rgb(126, 0, 0);
 }
 
@@ -394,7 +395,7 @@ html {
 
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
     .container {
       flex-direction: column;
     }
