@@ -38,7 +38,12 @@ $(document).ready(function () {
 var section2 = document.getElementById('section2');
 var section3 = document.getElementById('section3');
 var wrapimgfooter2 = document.getElementById('wrapimgfooter2');
-var wraplogo2 = document.getElementById('wraplogo2')
+var wraplogo2 = document.getElementById('wraplogo2');
+var switch2 = document.getElementById('switch2')
+var col1 = document.getElementById('col1');
+var col2 = document.getElementById('col2');
+var col3 = document.getElementById('col3');
+
 
 document.getElementById('text1').addEventListener('click', function() {
     section2.style.transform = 'translateX(0)';
@@ -48,4 +53,11 @@ document.getElementById('text1').addEventListener('click', function() {
 
 document.getElementById('text2').addEventListener('click', function() {
     section3.style.transform = 'translateX(0)';
+});
+
+
+document.getElementById('switch2').addEventListener('click', function() {
+    col1.style.width = '18%';
+    col2.style.width = '82%';
+    col3.style.width = '0';
 });
