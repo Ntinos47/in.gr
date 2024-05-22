@@ -49,3 +49,12 @@ document.getElementById('text1').addEventListener('click', function() {
 document.getElementById('text2').addEventListener('click', function() {
     section3.style.transform = 'translateX(0)';
 });
+
+
+
+document.getElementById('switch2').addEventListener
+('click', function() {
+    col1.style.width = '18%';
+    col2.style.width = '48%';
+    col3.style.width = '34%';
+});
