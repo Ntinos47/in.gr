@@ -57,54 +57,43 @@ document.getElementById('text2').addEventListener('click', function() {
 
 
 document.getElementById('switch2').addEventListener('click', function() {
-    col1.style.width = '30%';
-    col2.style.width = '70%';
+    col1.style.width = '25%';
+    col2.style.width = '75%';
     col3.style.width = '0';
 });
 
 
-function toggleContent1() {
+
+
+function toggleContent() {
 
     var div = document.getElementById("col1");
     var newDiv = document.getElementById("colReplace1");
 
-
-    // Check if myDiv currently displays original content
-    if (div.innerHTML === div) {
-        // Change the content of myDiv to newContent's content
+    if (div.innerHTML === div.innerHTML) {
         div.innerHTML = newDiv.innerHTML;
-    } else {
-        // Change the content of myDiv back to original content
-        div.innerHTML = newDiv;
     }
-}
-function toggleContent2() {
+    if (newDiv.innerHTML === newDiv.innerHTML) {
+        newDiv.innerHTML = div.innerHTML;
+    }
 
     var div = document.getElementById("col2");
     var newDiv = document.getElementById("colReplace2");
 
-
-    // Check if myDiv currently displays original content
-    if (div.innerHTML === div) {
-        // Change the content of myDiv to newContent's content
+    if (div.innerHTML === div.innerHTML) {
         div.innerHTML = newDiv.innerHTML;
-    } else {
-        // Change the content of myDiv back to original content
-        div.innerHTML = newDiv;
     }
-}
-function toggleContent3() {
-
+    if (newDiv.innerHTML === newDiv.innerHTML) {
+        newDiv.innerHTML = div.innerHTML;
+    }
+    
     var div = document.getElementById("col3");
-    var newDiv = document.getElementById("colReplace3");
+    var newDiv = document.getElementById("Replace");
 
-
-    // Check if myDiv currently displays original content
-    if (div.innerHTML === div) {
-        // Change the content of myDiv to newContent's content
+    if (div.innerHTML === div.innerHTML) {
         div.innerHTML = newDiv.innerHTML;
-    } else {
-        // Change the content of myDiv back to original content
-        div.innerHTML = newDiv;
+    }
+    if (newDiv.innerHTML === newDiv.innerHTML) {
+        newDiv.innerHTML = div.innerHTML;
     }
 }

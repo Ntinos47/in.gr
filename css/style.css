@@ -291,10 +291,12 @@ html {
 
 .column-1 {
     width: 34%;
+    transition: all 0.5s ease-in-out;
 }
 
 .column-2 {
     width:48%;
+    transition: all 0.5s ease-in-out;
 }
 
 .column-3 {
@@ -391,6 +393,7 @@ html {
     top: 50vh;
     right: 18%;
     transform: translate(50%);
+    transition: all 1s ease-in-out;
 }
 
 
