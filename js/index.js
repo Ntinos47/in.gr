@@ -60,6 +60,11 @@ document.getElementById('switch2').addEventListener('click', function() {
     col1.style.width = '25%';
     col2.style.width = '75%';
     col3.style.width = '0';
+    switch2.style.right = '74%';
+    switch2.style.transform = 'translate(35%)';
+
+
+    document.getElementById('switch2').id = 'switch3';
 });
 
 
@@ -73,9 +78,9 @@ function toggleContent() {
     if (div.innerHTML === div.innerHTML) {
         div.innerHTML = newDiv.innerHTML;
     }
-    if (newDiv.innerHTML === newDiv.innerHTML) {
+    /*if (newDiv.innerHTML === newDiv.innerHTML) {
         newDiv.innerHTML = div.innerHTML;
-    }
+    }*/
 
     var div = document.getElementById("col2");
     var newDiv = document.getElementById("colReplace2");
@@ -83,9 +88,9 @@ function toggleContent() {
     if (div.innerHTML === div.innerHTML) {
         div.innerHTML = newDiv.innerHTML;
     }
-    if (newDiv.innerHTML === newDiv.innerHTML) {
+    /*if (newDiv.innerHTML === newDiv.innerHTML) {
         newDiv.innerHTML = div.innerHTML;
-    }
+    }*/
     
     var div = document.getElementById("col3");
     var newDiv = document.getElementById("Replace");
@@ -93,7 +98,7 @@ function toggleContent() {
     if (div.innerHTML === div.innerHTML) {
         div.innerHTML = newDiv.innerHTML;
     }
-    if (newDiv.innerHTML === newDiv.innerHTML) {
+    /*if (newDiv.innerHTML === newDiv.innerHTML) {
         newDiv.innerHTML = div.innerHTML;
-    }
+    }*/
 }

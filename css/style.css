@@ -254,6 +254,11 @@ html {
     .text1, .text2 {
         font-size: 25px;
     }
+    .switch_mob {
+        padding-left: 10px;
+        height: auto;
+        width: 80px;
+    }
 }
 @media (max-width: 800px) {
     .wrap-content2 {
@@ -261,6 +266,11 @@ html {
     }
     .text1, .text2 {
         font-size: 23px;
+    }
+    .switch_mob {
+        padding-right: 200px;
+        height: auto;
+        width: 70px;
     }
 }
 @media (max-width: 600px) {
@@ -393,18 +403,18 @@ html {
     top: 50vh;
     right: 18%;
     transform: translate(50%);
-    transition: all 1s ease-in-out;
+    transition: all 0.6s ease-in-out;
 }
 
 
 
 @media screen and (max-width: 800px) {
     .container {
-      flex-direction: column;
+        flex-direction: column;
     }
     .column-1 {
-      width: 100%;
-      max-height: 32vh;
+        width: 100%;
+        max-height: 32vh;
     }
     .wrap-video {
         top:-100%
