@@ -55,29 +55,37 @@ document.getElementById('text2').addEventListener('click', function() {
     section3.style.transform = 'translateX(0)';
 });
 
-
+var counter = 1;
 document.getElementById('switch2').addEventListener('click', function() {
-    col1.style.width = '25%';
-    col2.style.width = '75%';
-    col3.style.width = '0';
-    switch2.style.right = '74%';
-    switch2.style.transform = 'translate(35%)';
+    if (counter == 1) {
+        col1.style.width = '25%';
+        col2.style.width = '75%';
+        col3.style.width = '0';
+        switch2.style.right = '74%';
+        switch2.style.transform = 'translate(35%)';
 
+        var div = document.getElementById("col1");
+        var newDiv = document.getElementById("colReplace1");
+    
+        if (div.innerHTML === div.innerHTML) {
+            div.innerHTML = newDiv.innerHTML;
+        }
 
-    document.getElementById('switch2').id = 'switch3';
+        counter = 2;
+    } else if (counter == 2) {
+        col1.style.width = '34%';
+        col2.style.width = '48%';
+        col3.style.width = '18%';
+        switch2.style.right = '17%';
+        switch2.style.transform = 'translate(35%)';
+
+        counter = 1;
+    }
 });
-
-
 
 
 function toggleContent() {
 
-    var div = document.getElementById("col1");
-    var newDiv = document.getElementById("colReplace1");
-
-    if (div.innerHTML === div.innerHTML) {
-        div.innerHTML = newDiv.innerHTML;
-    }
     /*if (newDiv.innerHTML === newDiv.innerHTML) {
         newDiv.innerHTML = div.innerHTML;
     }*/

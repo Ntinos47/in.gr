@@ -407,6 +407,13 @@ html {
 }
 
 
+#fv-dots {
+    position: fixed;
+    top: 50%;
+    display: none;
+    left: 96%;
+    transform: translate(-50%, -50%);
+}
 
 @media screen and (max-width: 800px) {
     .container {
