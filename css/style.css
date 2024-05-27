@@ -307,11 +307,13 @@ html {
 .column-2 {
     width:48%;
     transition: all 0.5s ease-in-out;
+    background-color: rgb(212, 212, 212);
 }
 
 .column-3 {
     width: 18%;
     background-color: rgb(126, 0, 0);
+    transition: all 0.5s ease-in-out;
 }
 
 
@@ -405,6 +407,18 @@ html {
     transform: translate(50%);
     transition: all 0.6s ease-in-out;
 }
+
+
+/* CSS for fade effect */
+.content-wrapper {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.fade {
+    opacity: 0;
+}
+
 
 
 #fv-dots {

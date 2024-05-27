@@ -58,55 +58,67 @@ document.getElementById('text2').addEventListener('click', function() {
 var counter = 1;
 document.getElementById('switch2').addEventListener('click', function() {
     if (counter == 1) {
-        col1.style.width = '25%';
-        col2.style.width = '75%';
+        col1.style.width = '18%';
+        col2.style.width = '82%';
         col3.style.width = '0';
-        switch2.style.right = '74%';
-        switch2.style.transform = 'translate(35%)';
-
-        var div = document.getElementById("col1");
-        var newDiv = document.getElementById("colReplace1");
-    
-        if (div.innerHTML === div.innerHTML) {
-            div.innerHTML = newDiv.innerHTML;
-        }
+        switch2.style.right = '81%';
+        switch2.style.transform = 'translate(30%)';
+        section2.style.background = 'rgb(126, 0, 0)';
 
         counter = 2;
+        toggleContent(counter);
+
     } else if (counter == 2) {
         col1.style.width = '34%';
         col2.style.width = '48%';
         col3.style.width = '18%';
         switch2.style.right = '17%';
         switch2.style.transform = 'translate(35%)';
-
+        
         counter = 1;
+        toggleContent(counter);
     }
 });
 
+function toggleContent(counter) {
+    console.log(counter);
 
-function toggleContent() {
+    var div1 = document.getElementById("col1");
+    var newDiv1 = document.getElementById("colReplace1");
+    var div2 = document.getElementById("col2");
+    var newDiv2 = document.getElementById("colReplace2");
+    var div3 = document.getElementById("col3");
+    var newDiv3 = document.getElementById("colReplace3");
 
-    /*if (newDiv.innerHTML === newDiv.innerHTML) {
-        newDiv.innerHTML = div.innerHTML;
-    }*/
+    if (counter == 2) {
+        // Store original content temporarily
+        var temp1 = div1.innerHTML;
+        var temp2 = div2.innerHTML;
+        var temp3 = div3.innerHTML;
 
-    var div = document.getElementById("col2");
-    var newDiv = document.getElementById("colReplace2");
+        // Replace with new content
+        div1.innerHTML = newDiv1.innerHTML;
+        div2.innerHTML = newDiv2.innerHTML;
+        div3.innerHTML = newDiv3.innerHTML;
 
-    if (div.innerHTML === div.innerHTML) {
-        div.innerHTML = newDiv.innerHTML;
+        // Update replacements with the original content
+        newDiv1.innerHTML = temp1;
+        newDiv2.innerHTML = temp2;
+        newDiv3.innerHTML = temp3;
+    } else if (counter == 1) {
+        // Store swapped content temporarily
+        var temp1 = newDiv1.innerHTML;
+        var temp2 = newDiv2.innerHTML;
+        var temp3 = newDiv3.innerHTML;
+
+        // Replace with original content
+        newDiv1.innerHTML = div1.innerHTML;
+        newDiv2.innerHTML = div2.innerHTML;
+        newDiv3.innerHTML = div3.innerHTML;
+
+        // Update original divs with swapped content
+        div1.innerHTML = temp1;
+        div2.innerHTML = temp2;
+        div3.innerHTML = temp3;
     }
-    /*if (newDiv.innerHTML === newDiv.innerHTML) {
-        newDiv.innerHTML = div.innerHTML;
-    }*/
-    
-    var div = document.getElementById("col3");
-    var newDiv = document.getElementById("Replace");
-
-    if (div.innerHTML === div.innerHTML) {
-        div.innerHTML = newDiv.innerHTML;
-    }
-    /*if (newDiv.innerHTML === newDiv.innerHTML) {
-        newDiv.innerHTML = div.innerHTML;
-    }*/
 }
