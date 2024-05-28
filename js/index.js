@@ -39,7 +39,8 @@ var section2 = document.getElementById('section2');
 var section3 = document.getElementById('section3');
 var wrapimgfooter2 = document.getElementById('wrapimgfooter2');
 var wraplogo2 = document.getElementById('wraplogo2');
-var switch2 = document.getElementById('switch2')
+var switch2 = document.getElementById('switch2');
+var switch3 = document.getElementById('switch3');
 var col1 = document.getElementById('col1');
 var col2 = document.getElementById('col2');
 var col3 = document.getElementById('col3');
@@ -50,19 +51,14 @@ document.getElementById('text1').addEventListener('click', function() {
     wrapimgfooter2.style.zIndex = '0';
     wraplogo2.style.zIndex = '0';
 });
-
-document.getElementById('text2').addEventListener('click', function() {
-    section3.style.transform = 'translateX(0)';
-});
-
 var counter = 1;
 document.getElementById('switch2').addEventListener('click', function() {
     if (counter == 1) {
-        col1.style.width = '18%';
-        col2.style.width = '82%';
+        col1.style.width = '24%';
+        col2.style.width = '76%';
         col3.style.width = '0';
-        switch2.style.right = '81%';
-        switch2.style.transform = 'translate(30%)';
+        switch2.style.right = '77%';
+        switch2.style.transform = 'translate(40%)';
         section2.style.background = 'rgb(126, 0, 0)';
 
         counter = 2;
@@ -73,7 +69,7 @@ document.getElementById('switch2').addEventListener('click', function() {
         col2.style.width = '48%';
         col3.style.width = '18%';
         switch2.style.right = '17%';
-        switch2.style.transform = 'translate(35%)';
+        switch2.style.transform = 'translate(30%)';
         
         counter = 1;
         toggleContent(counter);
@@ -81,7 +77,6 @@ document.getElementById('switch2').addEventListener('click', function() {
 });
 
 function toggleContent(counter) {
-    console.log(counter);
 
     var div1 = document.getElementById("col1");
     var newDiv1 = document.getElementById("colReplace1");
@@ -122,3 +117,16 @@ function toggleContent(counter) {
         div3.innerHTML = temp3;
     }
 }
+
+var colu1 = document.getElementById('col1-2');
+var colu2 = document.getElementById('col2-2');
+var colu3 = document.getElementById('col3-2');
+
+document.getElementById('text2').addEventListener('click', function() {
+    section3.style.transform = 'translateX(0)';
+    wrapimgfooter2.style.zIndex = '0';
+    wraplogo2.style.zIndex = '0';
+    switch3.style.left = '17%';
+    switch3.style.transform = 'translate(45%)';
+});
+
