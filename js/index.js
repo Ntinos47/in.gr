@@ -41,10 +41,11 @@ var wrapimgfooter2 = document.getElementById('wrapimgfooter2');
 var wraplogo2 = document.getElementById('wraplogo2');
 var switch2 = document.getElementById('switch2');
 var switch3 = document.getElementById('switch3');
+
+
 var col1 = document.getElementById('col1');
 var col2 = document.getElementById('col2');
 var col3 = document.getElementById('col3');
-
 
 document.getElementById('text1').addEventListener('click', function() {
     section2.style.transform = 'translateX(0)';
@@ -112,6 +113,7 @@ function toggleContent(counter) {
     }
 }
 
+
 var colu1 = document.getElementById('col1-2');
 var colu2 = document.getElementById('col2-2');
 var colu3 = document.getElementById('col3-2');
@@ -121,12 +123,10 @@ document.getElementById('text2').addEventListener('click', function() {
     wrapimgfooter2.style.zIndex = '0';
     wraplogo2.style.zIndex = '0';
 });
-
-
 var count = 1;
 document.getElementById('switch3').addEventListener('click', function() {
     if (count == 1) {
-        colu1.style.maxWidth = '34%';
+        colu1.style.width = '34%';
         colu2.style.width = '48%';
         colu3.style.width = '18%';
         switch3.style.right = '17%';
@@ -134,16 +134,19 @@ document.getElementById('switch3').addEventListener('click', function() {
 
         count = 2;
         toggleContent1(count);
+        console.log(count);
 
     } else if (count == 2) {
         colu1.style.width = '24%';
         colu2.style.width = '76%';
         colu3.style.width = '0';
-        switch3.style.right = '77%';
-        switch3.style.transform = 'translate(40%)';
+        switch3.style.right = '75%';
+        switch3.style.transform = 'translate(30%)';
 
         count = 1;
         toggleContent1(count);
+        console.log(count);
+
     }
 });
 
@@ -152,9 +155,9 @@ function toggleContent1(count) {
     var Div1 = document.getElementById("col1-2");
     var Div2 = document.getElementById("col2-2");
     var Div3 = document.getElementById("col3-2");
-    var newDiv1 = document.getElementById("col-1");
-    var newDiv2 = document.getElementById("col-2");
-    var newDiv3 = document.getElementById("col-3");
+    var newDiv1 = document.getElementById("recol-1");
+    var newDiv2 = document.getElementById("recol-2");
+    var newDiv3 = document.getElementById("recol-3");
 
     if (count == 2) {
         var temp1 = Div1.innerHTML;
