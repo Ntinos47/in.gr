@@ -134,8 +134,7 @@ document.getElementById('switch3').addEventListener('click', function() {
 
         count = 2;
         toggleContent1(count);
-        console.log(count);
-
+        
     } else if (count == 2) {
         colu1.style.width = '24%';
         colu2.style.width = '76%';
@@ -145,8 +144,6 @@ document.getElementById('switch3').addEventListener('click', function() {
 
         count = 1;
         toggleContent1(count);
-        console.log(count);
-
     }
 });
 

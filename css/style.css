@@ -496,3 +496,9 @@ html {
     transform: translate(50%);
     transition: all 0.6s ease-in-out;
 }
+
+.art {
+    width: 200px;
+    height: 500px;
+    background-color: blue;
+}
