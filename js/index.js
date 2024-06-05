@@ -60,7 +60,7 @@ document.getElementById('switch2').addEventListener('click', function() {
         col3.style.width = '0';
         switch2.style.right = '77%';
         switch2.style.transform = 'translate(40%)';
-        section2.style.background = 'rgb(126, 0, 0)';
+        section2.style.background = ' rgb(195, 0, 0)';
 
         counter = 2;
         toggleContent(counter);
