@@ -58,9 +58,8 @@ document.getElementById('switch2').addEventListener('click', function() {
         col1.style.width = '24%';
         col2.style.width = '76%';
         col3.style.width = '0';
-        switch2.style.right = '77%';
-        switch2.style.transform = 'translate(40%)';
-        section2.style.background = ' rgb(195, 0, 0)';
+        switch2.style.left = '18%';
+        switch2.style.transform = 'translate(35%)';
 
         counter = 2;
         toggleContent(counter);
@@ -69,8 +68,8 @@ document.getElementById('switch2').addEventListener('click', function() {
         col1.style.width = '34%';
         col2.style.width = '48%';
         col3.style.width = '18%';
-        switch2.style.right = '17%';
-        switch2.style.transform = 'translate(30%)';
+        switch2.style.left = '76%';
+        switch2.style.transform = 'translate(65%)';
         
         counter = 1;
         toggleContent(counter);
@@ -186,7 +185,7 @@ function toggleContent1(count) {
 const initSlider = () => {
     const imageList = document.querySelector(".slider-wrapper .image-list");
     const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
-    const sliderScrollbar = document.querySelector(".container .slider-scrollbar");
+    const sliderScrollbar = document.querySelector(".cont .slider-scrollbar");
     const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
     const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
     
