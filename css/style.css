@@ -331,7 +331,7 @@ html {
 }
 
 .column-1 {
-    max-width: 34%;
+    width: 34%;
     height: 100%;
     position: relative;
     background-color: rgb(195, 0, 0);
@@ -347,8 +347,6 @@ html {
 }
 
 .column-3 {
-    min-width: 18%;
-    max-width: 18%;
     width: 18%;
     background-color:  rgb(195, 0, 0);
     transition: all 0.5s ease-in-out;
